@@ -1,0 +1,24 @@
+params:
+    dateFormat: MM/dd/yyyy                 # define date format for "date" data type
+transformations:
+    SOLD_STATUS:                           # value transformation for "isAvailable" property
+      map:
+         sold: false
+         pending: false
+         available: true
+         DEFAULT: false
+    SOLD_STATUS_SKIP:
+       $ref:   $transformations.SOLD_STATUS   # extends to "SOLD_STATUS" transformation.
+       map:
+          DEFAULT: exclude                  # exclude default value
+       onlyIfExist:                         # make transformation only source value exist in transformation map other wise return as it is
+functions:
+    insertPet: com.example.InsertPet        # declare a function to declare at Parsing Element.
+
+fragments:                                  # create reusable fragment
+    category:
+      type: object
+      fields:
+         id: int
+         name: string
+         type: string

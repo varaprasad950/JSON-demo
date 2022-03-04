@@ -1,0 +1,14 @@
+$extends: header.yaml
+result:
+      type: object     # result is map or a object.
+      path: /.+staff  # path is regex. its match with /company/staff
+      function: processStuff  # call processStuff function when /company/stuff tag is closed
+      filter: self.data.salary>10000   # any expression is valid in JavaScript, Groovy or JEXL
+      fields:
+        name:  
+          path: firstname
+        sureName:
+          path: lastname
+        userName:
+          path: nickname
+        salary: long
