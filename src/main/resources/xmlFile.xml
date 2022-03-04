@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Pet id="1">
+    <name>Van Kedisi</name>
+    <status>sold</status>
+    <createDate>01/24/2019</createDate>
+    <category>
+        <id>1</id>
+        <name>Cats</name>
+    </category>
+    <tags>
+        <tag>
+            <id>1</id>
+            <name>Cute</name>
+        </tag>
+        <tag>
+            <id>2</id>
+            <name>Popular</name>
+        </tag>
+    </tags>
+    <photoUrls>
+        <photoUrl>url1</photoUrl>
+        <photoUrl>url2</photoUrl>
+     </photoUrls>
+</Pet>

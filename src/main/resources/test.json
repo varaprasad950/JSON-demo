@@ -1,0 +1,19 @@
+{
+    "company": {
+         
+        "staff": [
+            {
+                "firstname": "yong",
+                "lastname": "mook kim",
+                "nickname": "mkyong",
+                "salary": "100000"
+            },
+            {
+                "firstname": "low",
+                "lastname": "yin fong",
+                "nickname": "fong fong",
+                "salary": "200000"
+            }
+        ]
+    }
+}
